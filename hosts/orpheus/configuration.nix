@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ../modules/nvidia-drivers.nix
       ../modules/fonts.nix
+      ../modules/pulse-audio.nix
     ];
 
   # Bootloader.
