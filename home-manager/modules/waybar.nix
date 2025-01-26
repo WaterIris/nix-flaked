@@ -147,6 +147,9 @@
         }
 
         #network {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #c4a7e7;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        padding-left: 16px;
@@ -154,11 +157,14 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #232136;
-	        background: #c4a7e7;
+	        color: #c4a7e7;
+	        background: #232136;
         }
 
         #pulseaudio {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #56949f;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        padding-left: 16px;
@@ -166,11 +172,14 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #232136;
-	        background: #56949f;
+	        color: #56949f;
+	        background: #232136;
         }
 
         #temperature {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #f6c177;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        padding-left: 16px;
@@ -178,11 +187,14 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #232136;
-	        background: #f6c177;
+	        color: #f6c177;
+	        background: #232136;
         }
 
         #cpu {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #f6c177;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        padding-left: 16px;
@@ -190,11 +202,14 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #232136;
-	        background: #f6c177;
+	        color: #f6c177;
+	        background: #232136;
         }
 
         #memory {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #eb6f92;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        padding-left: 16px;
@@ -202,11 +217,14 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #232136;
-	        background: #eb6f92;
+	        color: #eb6f92;
+	        background: #232136;
         }
 
         #disk {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #a6da95;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        padding-left: 16px;
@@ -214,11 +232,14 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #232136;
-	        background: #a6da95;
+	        color: #a6da95;
+	        background: #232136;
         }
 
         #battery {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #ea9a97;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        padding-left: 16px;
@@ -226,8 +247,8 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #232136;
-	        background: #ea9a97;
+	        color: #ea9a97;
+	        background: #232136;
         }
 
 

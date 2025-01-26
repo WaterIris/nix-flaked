@@ -13,8 +13,12 @@
       "$browser" = "firefox";
       "$run" = "rofi -show drun";
       "$mod" = "SUPER";
-      "windowrule" = "opacity 0.9, wezterm";
-      
+
+      "windowrulev2" = [ 
+        "opacity 1, focus:1"
+        "opacity 0.8, focus:0"
+      ];
+
       exec-once = [ 
         "waybar"
       ];
@@ -69,6 +73,8 @@
         gaps_in = 5;
         gaps_out = 5;
         border_size = 0;
+        "col.active_border" = "rgb(3e8fb0)";
+        "col.inactive_border" = "rgb(2a273f)";
         layout = "dwindle";
       };
 
