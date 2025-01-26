@@ -22,6 +22,11 @@
     	  disable_hyprland_logo = false;
       };
 
+      env = [
+        "HYPRCURSOR_THEME,MyCursor"
+        "HYPRCURSOR_SIZE,24"
+      ];
+
       bind = [
         "$mod, Return, exec, $terminal"
         "$mod, C, killactive,"
@@ -84,22 +89,23 @@
       ];
 
       animation = [
-	      "global, 1, 10, default"
-    	  "border, 1, 5.39, easeOutQuint"
-        "windows, 1, 4.79, easeOutQuint"
-        "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
-        "windowsOut, 1, 1.49, linear, popin 87%"
-        "fadeIn, 1, 1.73, almostLinear"
-        "fadeOut, 1, 1.46, almostLinear"
-        "fade, 1, 3.03, quick"
-        "layers, 1, 3.81, easeOutQuint"
-        "layersIn, 1, 4, easeOutQuint, fade"
-        "layersOut, 1, 1.5, linear, fade"
-        "fadeLayersIn, 1, 1.79, almostLinear"
-        "fadeLayersOut, 1, 1.39, almostLinear"
-        "workspaces, 1, 1.94, almostLinear, fade"
-        "workspacesIn, 1, 1.21, almostLinear, fade"
-        "workspacesOut, 1, 1.94, almostLinear, fade"
+	      "global, 1, 1.5, default"
+    	    "border, 1, 2, easeOutQuint"
+        "windows, 1, 1.5, linear"
+          "windowsIn, 1, 1.5, easeOutQuint, popin 87%"
+          "windowsOut, 1, 1.5, linear, popin 87%"
+          "windowsMove, 1, 3, linear, slide"
+        "fade, 1, 1.49, quick"
+          "fadeIn, 1, 1.5, almostLinear"
+          "fadeOut, 1, 1.5, almostLinear"
+          "fadeLayersIn, 1, 1.5, almostLinear"
+          "fadeLayersOut, 1, 1.5, almostLinear"
+        "layers, 1, 1.5, easeOutQuint"
+          "layersIn, 1, 1.5, easeOutQuint, fade"
+          "layersOut, 1, 1.5, linear, fade"
+        "workspaces, 1, 3, almostLinear, slide"
+          "workspacesIn, 1, 3, almostLinear, slide"
+          "workspacesOut, 1, 3, almostLinear, slide"
       ];
     };
   };
