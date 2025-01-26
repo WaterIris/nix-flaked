@@ -1,5 +1,11 @@
-{...}:
+{pkgs, ...}:
 {
+  home.pointerCursor = {
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 16;
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
@@ -21,11 +27,6 @@
     	  force_default_wallpaper = 0;
     	  disable_hyprland_logo = false;
       };
-
-      env = [
-        "HYPRCURSOR_THEME,MyCursor"
-        "HYPRCURSOR_SIZE,24"
-      ];
 
       bind = [
         "$mod, Return, exec, $terminal"
