@@ -7,11 +7,10 @@
       "$browser" = "firefox";
       "$run" = "rofi -show drun";
       "$mod" = "SUPER";
-       
       "windowrule" = "opacity 0.9, wezterm";
       
       exec-once = [ 
-           "waybar"
+        "waybar"
       ];
 
       monitor = [
@@ -19,8 +18,8 @@
       ];
 
       misc = {
-    	force_default_wallpaper = 0;
-    	disable_hyprland_logo = false;
+    	  force_default_wallpaper = 0;
+    	  disable_hyprland_logo = false;
       };
 
       bind = [
@@ -34,22 +33,23 @@
         "$mod, Right, movefocus, r"
         "$mod, Up, movefocus, u"
         "$mod, Down, movefocus, d"
+        
         "Alt, Tab, cyclenext,"
-	"$mod, N, layoutmsg, swapsplit"
+        "$mod, N, layoutmsg, swapsplit"
 
-	"$mod, 1, workspace, 1"
-	"$mod, 2, workspace, 2"
-	"$mod, 3, workspace, 3"
-	"$mod, 4, workspace, 4"
-	"$mod, 5, workspace, 5"
-	"$mod, 6, workspace, 6"
+	      "$mod, 1, workspace, 1"
+	      "$mod, 2, workspace, 2"
+	      "$mod, 3, workspace, 3"
+	      "$mod, 4, workspace, 4"
+	      "$mod, 5, workspace, 5"
+	      "$mod, 6, workspace, 6"
 
-	"$mod+Shift, 1, movetoworkspace, 1"
-	"$mod+Shift, 2, movetoworkspace, 2"
-	"$mod+Shift, 3, movetoworkspace, 3"
-	"$mod+Shift, 4, movetoworkspace, 4"
-	"$mod+Shift, 5, movetoworkspace, 5"
-	"$mod+Shift, 6, movetoworkspace, 6"
+	      "$mod+Shift, 1, movetoworkspace, 1"
+	      "$mod+Shift, 2, movetoworkspace, 2"
+	      "$mod+Shift, 3, movetoworkspace, 3"
+	      "$mod+Shift, 4, movetoworkspace, 4"
+	      "$mod+Shift, 5, movetoworkspace, 5"
+	      "$mod+Shift, 6, movetoworkspace, 6"
       ];
       
       binde = [
@@ -84,8 +84,8 @@
       ];
 
       animation = [
-	"global, 1, 10, default"
-    	"border, 1, 5.39, easeOutQuint"
+	      "global, 1, 10, default"
+    	  "border, 1, 5.39, easeOutQuint"
         "windows, 1, 4.79, easeOutQuint"
         "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
         "windowsOut, 1, 1.49, linear, popin 87%"
