@@ -98,7 +98,7 @@
 	        border-radius: 0;
 	        font-family: JetBrainsMono Nerd Font;
 	        font-size: 14px;
-	        min-height: 24px;
+	        min-height: 32px;
         }
 
         window#waybar {

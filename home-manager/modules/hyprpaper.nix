@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/bg/tokyo_rain.png" 
+        "~/.config/bg/planets.png" 
       ];
 
       wallpaper = [
-        ",~/.config/bg/tokyo_rain.png"
+        ",~/.config/bg/planets.png"
        ];
     };
 
