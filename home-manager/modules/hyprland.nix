@@ -29,13 +29,13 @@
 
       misc = {
     	  force_default_wallpaper = 0;
-    	  disable_hyprland_logo = false;
+    	  disable_hyprland_logo = true;
       };
 
       bind = [
         "$mod, Return, exec, $terminal"
-        "$mod, C, killactive,"
-        "$mod, Q, exec, $browser"
+        "$mod, Q, killactive,"
+        "$mod, E, exec, $browser"
         "$mod, R, exec, $run"
         "$mod+Shift, M, exit,"
         

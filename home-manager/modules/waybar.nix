@@ -253,6 +253,9 @@
 
 
         #clock {
+          border-width: 2px;
+          border-style: solid;
+          border-color: #f8f8f2;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        margin-right: 12px;
