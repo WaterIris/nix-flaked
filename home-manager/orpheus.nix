@@ -4,7 +4,7 @@
   home.homeDirectory = "/home/iris";
   nixpkgs.config.allowUnfree = true;
   imports = [
-    ./modules/default.nix
+    ./modules/packages.nix
     ./modules/hyprland.nix
     ./modules/waybar.nix
     ./modules/zsh.nix

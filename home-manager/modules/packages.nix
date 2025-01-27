@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     # monitoring
+    tree
     inputs.nixvim.packages.${system}.default
     pavucontrol
     neofetch
