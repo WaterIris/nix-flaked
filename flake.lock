@@ -683,11 +683,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1737852487,
-        "narHash": "sha256-iFofa7Coj7HXvwSpr+rU4h+0QU4+CgtaCYtZK/UdG2U=",
+        "lastModified": 1737936442,
+        "narHash": "sha256-Pqq8mMgioiIFQkEoylVddT/72hXW5C2F7R9qL4aZbI4=",
         "owner": "WaterIris",
         "repo": "nixvim-conf",
-        "rev": "56549a82d6939a413d45f899e299dabccce8548e",
+        "rev": "c72ae560296093e3ad47efb760f4d23bede9f28a",
         "type": "github"
       },
       "original": {
