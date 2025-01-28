@@ -3,7 +3,7 @@
   home.pointerCursor = {
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    size = 16;
+    size = 12;
   };
 
   wayland.windowManager.hyprland = {
@@ -15,8 +15,10 @@
       "$mod" = "SUPER";
 
       "windowrulev2" = [ 
-        "opacity 1, focus:1"
-        "opacity 0.8, focus:0"
+        "opacity 0.85, focus:1"
+        "opacity 0.7, focus:0"
+        "opacity 1.0,focus:1,class:firefox"
+        "opacity 0.8,focus:0,class:firefox"
       ];
 
       exec-once = [ 
@@ -34,7 +36,7 @@
 
       bind = [
         "$mod, Return, exec, $terminal"
-        "$mod, Q, killactive,"
+        "$mod, C, killactive,"
         "$mod, E, exec, $browser"
         "$mod, R, exec, $run"
         "$mod+Shift, M, exit,"
@@ -96,18 +98,18 @@
       ];
 
       animation = [
-	      "global, 1, 1.5, default"
-    	    "border, 1, 2, easeOutQuint"
-        "windows, 1, 1.5, linear"
-          "windowsIn, 1, 1.0, easeOutQuint, popin 87%"
-          "windowsOut, 1, 1.0, linear, popin 87%"
+	      "global, 1, 10, default"
+    	    "border, 1, 5.39, easeOutQuint"
+        "windows, 1, 4.0, linear"
+          "windowsIn, 1, 3.0, easeOutQuint, popin 87%"
+          "windowsOut, 1, 2.0, linear, popin 87%"
           "windowsMove, 1, 2.0, linear, slide"
         "fade, 1, 1.49, quick"
           "fadeIn, 1, 1.0, almostLinear"
           "fadeOut, 1, 1.0, almostLinear"
-          "fadeLayersIn, 1, 1.5, almostLinear"
+          "fadeLayersIn, 1, 3.0, almostLinear"
           "fadeLayersOut, 1, 1.5, almostLinear"
-        "layers, 1, 1.5, easeOutQuint"
+        "layers, 1, 4.0, easeOutQuint"
           "layersIn, 1, 1.5, easeOutQuint, fade"
           "layersOut, 1, 1.5, linear, fade"
         "workspaces, 1, 3, almostLinear, slide"

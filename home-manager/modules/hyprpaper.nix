@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/bg/current.png" 
+        "~/.config/bg/rain.png" 
       ];
 
       wallpaper = [
-        ",~/.config/bg/current.png"
+        ",~/.config/bg/rain.png"
        ];
     };
 
