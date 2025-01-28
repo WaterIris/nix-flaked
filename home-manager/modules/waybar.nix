@@ -9,11 +9,14 @@
           position = "top";
           modules-left = [ 
             "hyprland/workspaces"
+            "pulseaudio"
+          ];
+
+          modules-center = [
+            "network"
           ];
 
           modules-right = [
-            "network"
-            "pulseaudio"
             "cpu"
             "memory"
             "disk"
@@ -21,7 +24,7 @@
             "clock"
           ];
 
-	        "hyprland/workspaces" = {
+	        "workspaces" = {
             format = "{name}";
             format-icons = {
   	          default = "";
@@ -37,6 +40,7 @@
             tooltip = true;
             tooltip-format = "<big>{:%A, %d.%B %Y }</big>\n<tt><small>{calendar}</small></tt>";
           };
+
           "memory" = {
             interval = 5;
             format = "  {}%";
@@ -123,9 +127,9 @@
 	        background: transparent;
         }
 
-        #workspaces {
+        #workspaces {     
           margin-top: 4px;
-	        margin-left: 12px;
+	        margin-left: 8px;
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        background: #232136;
@@ -136,7 +140,7 @@
 	        transition: none;
 	        color: #f8f8f2;
 	        background: transparent;
-	        font-size: 16px;
+	        font-size: 8px;
         }
 
         #workspaces button:hover {
@@ -255,7 +259,7 @@
         #clock {
           border-width: 2px;
           border-style: solid;
-          border-color: #f8f8f2;
+          border-color: #f5c2e7;
 	        margin-top: 4px;
 	        margin-left: 8px;
 	        margin-right: 12px;
@@ -264,7 +268,7 @@
 	        margin-bottom: 0;
 	        border-radius: 26px;
 	        transition: none;
-	        color: #f8f8f2;
+	        color: #f5c2e7;
 	        background: #232136;
         }
       '';

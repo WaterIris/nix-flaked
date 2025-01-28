@@ -72,11 +72,11 @@
       ];
 
       general = {
-        gaps_in = 5;
-        gaps_out = 5;
+        gaps_in = 8;
+        gaps_out = 10;
         border_size = 0;
-        "col.active_border" = "rgb(3e8fb0)";
-        "col.inactive_border" = "rgb(2a273f)";
+        "col.active_border" = "rgb(89b4fa)";
+        "col.inactive_border" = "rgb(94e2d5)";
         layout = "dwindle";
       };
 
@@ -86,7 +86,7 @@
       };
 
       decoration = {
-        rounding = 10;
+        rounding = 14;
       };
 
       bezier = [
