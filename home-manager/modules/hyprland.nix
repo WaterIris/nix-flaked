@@ -21,6 +21,15 @@
         "opacity 0.8,focus:0,class:firefox"
       ];
 
+      "workspace" = [
+        "1,persistent:1"
+        "2,persistent:1"
+        "3,persistent:1"
+        "4,persistent:1"
+        "5,persistent:1"
+        "6,persistent:1"
+      ];
+
       exec-once = [ 
         "waybar"
       ];
