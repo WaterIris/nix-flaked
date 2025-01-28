@@ -24,12 +24,18 @@
             "clock"
           ];
 
-	        "workspaces" = {
-            format = "{name}";
+	        "hyprland/workspaces" = {
+            format = "{icon}";
             format-icons = {
-  	          default = "";
-              active = "";
-              urgent = "";
+               "1" = "1";
+               "2" = "2";
+               "3" = "3";
+               "4" = "4";
+               "5" = "5";
+               "6" = "6";
+              "urgent" = "";
+              "active" = "";
+              "default" = "";
             };
             on-scroll-up = "hyprctl dispatch workspace e+1";
             on-scroll-down = "hyprctl dispatch workspace e-1";
@@ -148,6 +154,13 @@
 	        box-shadow: inherit;
 	        text-shadow: inherit;
 	        color: #eb6f92;
+        }
+
+        #workspaces button:active {
+	        transition: none;
+	        box-shadow: inherit;
+	        text-shadow: inherit;
+	        color: #31748f;
         }
 
         #network {
