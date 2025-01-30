@@ -26,17 +26,19 @@
 
 	        "hyprland/workspaces" = {
             format = "{icon}";
-            format-icons = {
-               "1" = "1";
-               "2" = "2";
-               "3" = "3";
-               "4" = "4";
-               "5" = "5";
-               "6" = "6";
-              "urgent" = "";
-              "active" = "";
-              "default" = "";
-            };
+
+          "persistent-workspaces" = {
+            "1" = ["eDP-1"];
+            "2" = ["HDMI-A-1"];
+          };
+          format-icons = {
+              "1" = "1";
+              "2" = "2";
+              "3" = "3";
+              "4" = "4";
+              "5" = "5";
+              "6" = "6";
+          };
             on-scroll-up = "hyprctl dispatch workspace e+1";
             on-scroll-down = "hyprctl dispatch workspace e-1";
           };  
@@ -156,7 +158,7 @@
 	        color: #eb6f92;
         }
 
-        #workspaces button:active {
+        #workspaces button.active {
 	        transition: none;
 	        box-shadow: inherit;
 	        text-shadow: inherit;

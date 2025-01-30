@@ -20,23 +20,25 @@
         "opacity 1.0,focus:1,class:firefox"
         "opacity 0.8,focus:0,class:firefox"
       ];
+      
+      monitor = [
+        "eDP-1, 1920x1080,0x0,1"
+        "HDMI-A-1, 2560x1080,1920x0,1"
+      ];
 
       "workspace" = [
-        "1,persistent:1"
-        "2,persistent:1"
-        "3,persistent:1"
-        "4,persistent:1"
-        "5,persistent:1"
-        "6,persistent:1"
+        "1,persistent:0"
+        "2,persistent:0"
+        "3,persistent:0"
+        "4,persistent:0"
+        "5,persistent:0"
+        "6,persistent:0"
       ];
 
       exec-once = [ 
         "waybar"
       ];
 
-      monitor = [
-        "eDP-1, 1920x1080@144, 0x0, 1" 
-      ];
 
       misc = {
     	  force_default_wallpaper = 0;
