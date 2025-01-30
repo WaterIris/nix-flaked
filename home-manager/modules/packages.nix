@@ -10,5 +10,6 @@
     htop
     firefox
     ripgrep
+    imagemagick
   ];
 }
