@@ -9,5 +9,6 @@
     nvtopPackages.nvidia
     htop
     firefox
+    ripgrep
   ];
 }
