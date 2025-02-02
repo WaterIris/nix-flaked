@@ -1,13 +1,27 @@
 {pkgs, ...}:
 {
   home.pointerCursor = {
+    gtk.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
     size = 12;
   };
 
+  gtk = {
+    enable = true;
+    theme = {
+      package = pkgs.flat-remix-gtk;
+      name = "Flat-Remix-GTK-Grey-Darkest";
+    };
+    iconTheme = {
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
+    };
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
+    
     settings = {
       "$terminal" = "wezterm";
       "$browser" = "firefox";
@@ -37,6 +51,11 @@
 
       exec-once = [ 
         "waybar"
+      ];
+
+      env = [
+        "LIBVA_DRIVER_NAME,nvidia"
+        "XCURSOR_SIZE,12"
       ];
 
 
