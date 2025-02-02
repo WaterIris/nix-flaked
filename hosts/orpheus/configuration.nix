@@ -51,12 +51,12 @@
     variant = "";
   };
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland = {
-      enable = true;
-    };
-  };
+  # services.displayManager.sddm = {
+    # enable = true;
+    # wayland = {
+      # enable = true;
+    # };
+  # };
 
   # Configure console keymap
   console.keyMap = "pl2";
@@ -78,8 +78,8 @@
     enable = true;
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-   
   };
+
   nix.settings.experimental-features = [ "nix-command" "flakes"];
   environment.systemPackages = [
     inputs.home-manager.packages.${pkgs.system}.default
