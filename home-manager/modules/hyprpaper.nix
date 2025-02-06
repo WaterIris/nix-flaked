@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/bg/sunrise.png" 
+        "~/.config/backgrounds/sunrise.png" 
       ];
 
       wallpaper = [
-        ",~/.config/bg/sunrise.png"
+        ",~/.config/backgrounds/sunrise.png"
        ];
     };
 
