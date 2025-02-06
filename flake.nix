@@ -20,12 +20,22 @@
           specialArgs = {inherit inputs;};
           modules = [./hosts/orpheus/configuration.nix];
         }; 
+	themis = nixpkgs.lib.nixosSystem{
+          inherit system;
+          specialArgs = {inherit inputs;};
+          modules = [./hosts/themis/configuration.nix];
+        }; 
       };    
       homeConfigurations = {
         "iris@orpheus" = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           extraSpecialArgs = {inherit inputs;};
           modules = [./home-manager/orpheus.nix];
+        }; 
+	"iris@themis" = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          extraSpecialArgs = {inherit inputs;};
+          modules = [./home-manager/themis.nix];
         }; 
         
       };
