@@ -35,6 +35,10 @@
         "opacity 0.8,focus:0,class:firefox"
       ];
 
+      "monitor" = [
+        "eDP-1, 1920x1080@144, 0x0, 1"
+      ];
+
       "workspace" = [
         "1,persistent:0"
         "2,persistent:0"
