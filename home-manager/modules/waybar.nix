@@ -27,10 +27,6 @@
 	        "hyprland/workspaces" = {
             format = "{icon}";
 
-          "persistent-workspaces" = {
-            "1" = ["eDP-1"];
-            "2" = ["HDMI-A-1"];
-          };
           format-icons = {
               "1" = "1";
               "2" = "2";

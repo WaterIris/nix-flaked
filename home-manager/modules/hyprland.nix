@@ -34,11 +34,6 @@
         "opacity 1.0,focus:1,class:firefox"
         "opacity 0.8,focus:0,class:firefox"
       ];
-      
-      monitor = [
-        "eDP-1, 1920x1080@144,2560x0,1"
-        "HDMI-A-1, 2560x1080@144,0x0,1"
-      ];
 
       "workspace" = [
         "1,persistent:0"
