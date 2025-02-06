@@ -146,6 +146,14 @@
 	        background: transparent;
 	        font-size: 8px;
         }
+        
+        #workspaces button.empty{
+          transition: none;
+	        box-shadow: inherit;
+	        text-shadow: inherit;
+	        color: #403d52;
+
+        }
 
         #workspaces button:hover {
 	        transition: none;
