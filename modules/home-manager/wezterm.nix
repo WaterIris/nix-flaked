@@ -6,7 +6,7 @@
       local wezterm = require 'wezterm'
       local config = {}
       config.font = wezterm.font ('JetBrainsMono Nerd Font', {weight = "Bold", italic = false})
-      config.font_size = 16
+      config.font_size = 14
       colors, metadata = wezterm.color.load_base16_scheme(".config/wezterm/rose.yaml")
       config.colors = colors
       config.enable_tab_bar = false
