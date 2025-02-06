@@ -11,5 +11,6 @@
     firefox
     ripgrep
     imagemagick
+    usbutils
   ];
 }
