@@ -8,9 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../modules/nvidia-drivers.nix
-      ../modules/fonts.nix
-      ../modules/pulse-audio.nix
+      ../../modules/nixos/nvidia-drivers.nix
+      ../../modules/nixos/fonts.nix
+      ../../modules/nixos/pulse-audio.nix
     ];
 
   # Bootloader.

@@ -4,16 +4,16 @@
   home.homeDirectory = "/home/iris";
   nixpkgs.config.allowUnfree = true;
   imports = [
-    ./modules/packages.nix
-    ./modules/hyprland.nix
-    ./modules/waybar.nix
-    ./modules/zsh.nix
-    ./modules/wezterm.nix
-    ./modules/rofi.nix
-    ./modules/hyprpaper.nix
-    ./modules/git.nix
-    ./modules/direnv.nix
-    ./modules/bg.nix
+    ../modules/home-manager/packages.nix
+    ../modules/home-manager/hyprland.nix
+    ../modules/home-manager/waybar.nix
+    ../modules/home-manager/zsh.nix
+    ../modules/home-manager/wezterm.nix
+    ../modules/home-manager/rofi.nix
+    ../modules/home-manager/hyprpaper.nix
+    ../modules/home-manager/git.nix
+    ../modules/home-manager/direnv.nix
+    ../modules/home-manager/bg.nix
   ];
   programs.home-manager.enable = true;
   systemd.user.startServices = "sd-switch";
