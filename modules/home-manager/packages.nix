@@ -1,7 +1,7 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    # monitoring
+    obsidian
     tree
     inputs.nixvim.packages.${system}.default
     pavucontrol
