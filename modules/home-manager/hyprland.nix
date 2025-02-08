@@ -33,16 +33,12 @@
         "opacity 0.7, focus:0"
         "opacity 1.0,focus:1,class:firefox"
         "opacity 0.8,focus:0,class:firefox"
-
-
-        "workspace 1, class:org.wezfurlong.wezterm"
-        "workspace 2, class:firefox"
-
       ];
 
       "monitor" = [
         "eDP-1, 1920x1080@144, 0x0, 1"
         "DP-1,2560x1440@144, 0x0, 1"
+        "HDMI-A-1, 2560x1440x@144, 1920x0,1"
       ];
 
       "workspace" = [
