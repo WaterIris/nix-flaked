@@ -28,6 +28,10 @@
       "$run" = "rofi -show drun";
       "$mod" = "SUPER";
 
+      "input" = {
+        "kb_layout" = "pl";
+      };
+
       "windowrulev2" = [ 
         "opacity 0.85, focus:1"
         "opacity 0.7, focus:0"
@@ -50,22 +54,22 @@
         "6,persistent:1"
       ];
 
-      exec-once = [ 
+      "exec-once" = [ 
         "waybar"
       ];
 
-      env = [
+      "env" = [
         "LIBVA_DRIVER_NAME,nvidia"
         "XCURSOR_SIZE,12"
       ];
 
 
-      misc = {
+      "misc" = {
     	  force_default_wallpaper = 0;
     	  disable_hyprland_logo = true;
       };
 
-      bind = [
+      "bind" = [
         "$mod, Return, exec, $terminal"
         "$mod, C, killactive,"
         "$mod, E, exec, $browser"
@@ -95,14 +99,14 @@
 	      "$mod+Shift, 6, movetoworkspace, 6"
       ];
       
-      binde = [
+      "binde" = [
         "ALT, Left, resizeactive, -10 0"
         "ALT, Right, resizeactive, 10 0"
         "ALT, Up, resizeactive, 0 -10"
         "ALT, Down, resizeactive, 0 10"
       ];
 
-      general = {
+      "general" = {
         gaps_in = 8;
         gaps_out = 10;
         border_size = 0;
@@ -111,16 +115,16 @@
         layout = "dwindle";
       };
 
-      dwindle = {
+      "dwindle" = {
         pseudotile = true;
         preserve_split = true;
       };
 
-      decoration = {
+      "decoration" = {
         rounding = 14;
       };
 
-      bezier = [
+      "bezier" = [
         "easeOutQuint,0.23,1,0.32,1"
         "easeInOutCubic,0.65,0.05,0.36,1"
         "linear,0,0,1,1"
@@ -128,7 +132,7 @@
         "quick,0.15,0,0.1,1"
       ];
 
-      animation = [
+      "animation" = [
 	      "global, 1, 10, default"
     	    "border, 1, 5.39, easeOutQuint"
         "windows, 1, 4.0, linear"
