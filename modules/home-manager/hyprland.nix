@@ -109,11 +109,11 @@
       ];
 
       "general" = {
-        gaps_in = 8;
-        gaps_out = 10;
-        border_size = 0;
-        "col.active_border" = "rgb(89b4fa)";
-        "col.inactive_border" = "rgb(94e2d5)";
+        gaps_in = 4;
+        gaps_out = 4;
+        border_size = 2;
+        "col.active_border" = "rgb(286983)";
+        "col.inactive_border" = "rgb(2a273f)";
         layout = "dwindle";
       };
 

@@ -7,20 +7,21 @@
         {
           layer = "top";
           position = "top";
+          fixed-center= true;
           modules-left = [ 
-            "hyprland/workspaces"
+            "battery"
             "pulseaudio"
+            "network"
           ];
 
           modules-center = [
-            "network"
+            "hyprland/workspaces"
           ];
 
           modules-right = [
             "cpu"
             "memory"
             "disk"
-            "battery"
             "clock"
           ];
 
@@ -72,8 +73,9 @@
 	        };
 
           "network" = {
-		        tooltip = false;
-		        format-wifi = "  {essid} {ipaddr}";
+		        tooltip = true;
+            tooltip-format = "{essid}";
+		        format-wifi = "  {ipaddr}";
 		        format-ethernet = "󰈀 {ipaddr}";
 	        };
 
@@ -103,10 +105,9 @@
       style = ''
         * {
 	        border: none;
-	        border-radius: 0;
+	        border-radius: 8px;
 	        font-family: JetBrainsMono Nerd Font;
 	        font-size: 14px;
-	        min-height: 14px;
         }
 
         window#waybar {
@@ -121,7 +122,6 @@
           margin-top: 4px;
           padding-left: 16px;
           padding-right: 16px;
-	        border-radius: 26px;
 	        transition: none;
 	        /*
 	        color: #f8f8f2;
@@ -135,8 +135,10 @@
           margin-top: 4px;
 	        margin-left: 8px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        background: #232136;
+          border-width: 2px;
+          border-style: solid;
+          border-color: #11111b;
 	        transition: none;
         }
 
@@ -144,7 +146,6 @@
 	        transition: none;
 	        color: #f8f8f2;
 	        background: transparent;
-	        font-size: 8px;
         }
         
         #workspaces button.empty{
@@ -178,7 +179,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #c4a7e7;
 	        background: #232136;
@@ -193,7 +193,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #56949f;
 	        background: #232136;
@@ -208,7 +207,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #f6c177;
 	        background: #232136;
@@ -223,7 +221,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #f6c177;
 	        background: #232136;
@@ -238,7 +235,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #eb6f92;
 	        background: #232136;
@@ -253,7 +249,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #a6da95;
 	        background: #232136;
@@ -268,7 +263,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #ea9a97;
 	        background: #232136;
@@ -285,7 +279,6 @@
 	        padding-left: 16px;
 	        padding-right: 16px;
 	        margin-bottom: 0;
-	        border-radius: 26px;
 	        transition: none;
 	        color: #f5c2e7;
 	        background: #232136;
