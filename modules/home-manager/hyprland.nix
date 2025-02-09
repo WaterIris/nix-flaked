@@ -57,6 +57,7 @@
 
       "exec-once" = [ 
         "waybar"
+        "dunst"
       ];
 
       "env" = [

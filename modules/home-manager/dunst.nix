@@ -6,7 +6,7 @@
       global = {
         width = 400;
         offset = "5x5";
-
+        wayland = 1;
         progress_bar_min_width = 380;
         progress_bar_max_width = 380;
         progress_bar_corner_radius = 2;
