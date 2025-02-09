@@ -12,5 +12,6 @@
     ripgrep
     imagemagick
     usbutils
+    spotify
   ];
 }
