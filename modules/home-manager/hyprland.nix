@@ -111,9 +111,9 @@
 
       "general" = {
         gaps_in = 4;
-        gaps_out = 4;
+        gaps_out = 8;
         border_size = 2;
-        "col.active_border" = "rgb(286983)";
+        "col.active_border" = "rgb(575279)";
         "col.inactive_border" = "rgb(2a273f)";
         layout = "dwindle";
       };

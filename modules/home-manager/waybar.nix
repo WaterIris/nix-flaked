@@ -120,8 +120,8 @@
 
         #window {
           margin-top: 4px;
-          padding-left: 16px;
-          padding-right: 16px;
+          padding-left: 0px;
+          padding-right: 0px;
 	        transition: none;
 	        /*
 	        color: #f8f8f2;
@@ -138,7 +138,7 @@
 	        background: #232136;
           border-width: 2px;
           border-style: solid;
-          border-color: #11111b;
+          border-color: #56949f;
 	        transition: none;
         }
 
