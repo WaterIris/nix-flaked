@@ -26,6 +26,7 @@
       "$terminal" = "wezterm";
       "$browser" = "firefox";
       "$run" = "rofi -show drun";
+      "$off" = "rofi -show power-menu";
       "$mod" = "SUPER";
 
       "input" = {
@@ -74,6 +75,7 @@
         "$mod, C, killactive,"
         "$mod, E, exec, $browser"
         "$mod, R, exec, $run"
+        "$mod, P, exec, $off"
         "$mod+Shift, M, exit,"
         
         "$mod, Left, movefocus, l"
