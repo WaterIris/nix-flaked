@@ -12,6 +12,7 @@
     ripgrep
     imagemagick
     usbutils
+    acpi
     spotify
   ];
 }

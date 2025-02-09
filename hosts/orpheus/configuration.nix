@@ -51,12 +51,12 @@
     variant = "";
   };
 
-  # services.displayManager.sddm = {
-    # enable = true;
-    # wayland = {
-      # enable = true;
-    # };
-  # };
+  services.displayManager.sddm = {
+    enable = true;
+    wayland = {
+      enable = true;
+    };
+  };
 
   # Configure console keymap
   console.keyMap = "pl2";
