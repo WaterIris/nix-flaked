@@ -14,6 +14,7 @@
     ../modules/home-manager/git.nix
     ../modules/home-manager/direnv.nix
     ../modules/home-manager/bg.nix
+    ../modules/home-manager/dunst.nix
   ];
 
   programs.home-manager.enable = true;
