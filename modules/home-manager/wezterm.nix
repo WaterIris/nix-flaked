@@ -17,6 +17,6 @@
   };
 
   home.file.".config/wezterm/rose.yaml" = {
-    source = ./rose.yaml;
+    source = ./wez_rose.yaml;
   };
 }

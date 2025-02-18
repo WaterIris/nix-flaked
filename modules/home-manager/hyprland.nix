@@ -23,7 +23,7 @@
     enable = true;
     
     settings = {
-      "$terminal" = "wezterm";
+      "$terminal" = "kitty";
       "$browser" = "firefox";
       "$run" = "rofi -show drun";
       "$off" = "rofi -show power-menu";
@@ -38,6 +38,8 @@
         "opacity 0.7, focus:0"
         "opacity 1.0,focus:1,class:firefox"
         "opacity 0.8,focus:0,class:firefox"
+        "opacity 1.0,focus:1,class:kitty"
+        "opacity 0.8,focus:0,class:kitty"
       ];
 
       "monitor" = [
@@ -112,9 +114,9 @@
       "general" = {
         gaps_in = 4;
         gaps_out = 8;
-        border_size = 2;
-        "col.active_border" = "rgb(575279)";
-        "col.inactive_border" = "rgb(2a273f)";
+        border_size = 3;
+        "col.active_border" = "rgb(3A435A)";
+        "col.inactive_border" = "rgb(171b24)";
         layout = "dwindle";
       };
 
