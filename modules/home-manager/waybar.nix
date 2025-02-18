@@ -6,7 +6,7 @@
       settings = [
         {
           layer = "top";
-          position = "top";
+          position = "bottom";
           fixed-center= true;
           modules-left = [ 
             "battery"
@@ -75,8 +75,8 @@
           "network" = {
 		        tooltip = true;
             tooltip-format = "{essid}";
-		        format-wifi = "  {essid}";
-		        format-ethernet = "󰈀 {essid}";
+		        format-wifi = " ";
+		        format-ethernet = "󰈀 ";
 	        };
 
           "battery" = {
@@ -104,7 +104,6 @@
 
       style = ''
         * {
-	        border: none;
 	        border-radius: 8px;
 	        font-family: JetBrainsMono Nerd Font;
 	        font-size: 14px;
@@ -120,7 +119,6 @@
         }
 
         #window {
-          margin-top: 4px;
           padding-left: 0px;
           padding-right: 0px;
 	        transition: none;
@@ -133,13 +131,14 @@
         }
 
         #workspaces {     
-          margin-top: 4px;
+	        margin-top: 5px;
 	        margin-left: 5px;
 	        margin-right: 5px;
-	        margin-bottom: 0;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
+          padding-left: 16px;
+	        padding-right: 16px;
 	        transition: none;
           color: #f4f3ee;
 	        background: #101319;
@@ -157,7 +156,6 @@
 	        box-shadow: inherit;
 	        text-shadow: inherit;
 	        color: #3A435A;
-
         }
 
         #workspaces button:hover {
@@ -175,121 +173,112 @@
         }
 
         #network {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 5px;
 	        margin-right: 5px;
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #56B7C8;
 	        background: #101319;
         }
 
         #pulseaudio {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 5px;
 	        margin-right: 5px;
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #885AC4;
 	        background: #101319;
         }
 
         #temperature {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 5px;
 	        margin-right: 5px;
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #f4f3ee;
 	        background: #101319;
         }
 
         #cpu {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 5px;
 	        margin-right: 5px;
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #3E66E0;
 	        background: #101319;
         }
 
         #memory {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 5px;
 	        margin-right: 5px;
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #DE642B;
 	        background: #101319;
         }
 
         #disk {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 5px;
 	        margin-right: 5px;
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #885AC4;
 	        background: #101319;
         }
 
         #battery {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 10px;
 	        margin-right: 5px;
-	        padding-left: 16px;
+	        padding-left: 5px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #E34F4F;
 	        background: #101319;
         }
 
-
         #clock {
+	        margin-top: 5px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
-	        margin-top: 4px;
 	        margin-left: 5px;
-	        margin-right: 10px;
+	        margin-right: 5px;
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
 	        transition: none;
 	        color: #E34F4F;
 	        background: #101319;
