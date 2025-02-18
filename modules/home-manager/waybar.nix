@@ -131,7 +131,8 @@
         }
 
         #workspaces {     
-	        margin-top: 5px;
+          margin-top: 0px;
+	        margin-bottom: 8px;
 	        margin-left: 5px;
 	        margin-right: 5px;
           border-width: 3px;
@@ -173,7 +174,8 @@
         }
 
         #network {
-	        margin-top: 5px;
+	        margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
@@ -187,7 +189,8 @@
         }
 
         #pulseaudio {
-	        margin-top: 5px;
+          margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
@@ -201,7 +204,8 @@
         }
 
         #temperature {
-	        margin-top: 5px;
+          margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
@@ -215,7 +219,8 @@
         }
 
         #cpu {
-	        margin-top: 5px;
+          margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
@@ -229,7 +234,8 @@
         }
 
         #memory {
-	        margin-top: 5px;
+          margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
@@ -243,7 +249,8 @@
         }
 
         #disk {
-	        margin-top: 5px;
+	        margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
@@ -257,7 +264,8 @@
         }
 
         #battery {
-	        margin-top: 5px;
+	        margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
@@ -271,7 +279,8 @@
         }
 
         #clock {
-	        margin-top: 5px;
+	        margin-top: 0px;
+	        margin-bottom: 8px;
           border-width: 3px;
           border-style: solid;
           border-color: #101319;
