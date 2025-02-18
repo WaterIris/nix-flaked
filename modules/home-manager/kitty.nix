@@ -12,7 +12,7 @@
     bold_italic_font = "auto";
     font_size = "12.0";
 
-    adjust_line_height = 3;
+    # adjust_line_height = 3;
     adjust_column_width = 0;
 
     force_ltr = "yes";
@@ -44,7 +44,7 @@
     window_border_width = 0;
     draw_minimal_borders = "yes";
     single_window_margin_width = -1;
-    window_margin_width = 14;
+    window_margin_width = 10;
     # Can set 4 values for top, right, bottom and left.
     window_padding_width = 0;
     inactive_text_alpha = 1.0;
