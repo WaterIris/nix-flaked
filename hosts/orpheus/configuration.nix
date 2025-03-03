@@ -26,6 +26,8 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  # Enable docker
+  virtualisation.docker.enable = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Warsaw";
@@ -51,12 +53,12 @@
     variant = "";
   };
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland = {
-      enable = true;
-    };
-  };
+  # services.displayManager.sddm = {
+    # enable = true;
+    # wayland = {
+      # enable = true;
+    # };
+  # };
 
   # Configure console keymap
   console.keyMap = "pl2";
@@ -65,7 +67,7 @@
   users.users.iris = {
     isNormalUser = true;
     description = "iris";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [];
   };
 

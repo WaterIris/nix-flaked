@@ -48,15 +48,6 @@
         "HDMI-A-1, 2560x1440x@144, 1920x0,1"
       ];
 
-      "workspace" = [
-        "1,persistent:1"
-        "2,persistent:1"
-        "3,persistent:1"
-        "4,persistent:1"
-        "5,persistent:1"
-        "6,persistent:1"
-      ];
-
       "exec-once" = [ 
         "waybar"
         "dunst"

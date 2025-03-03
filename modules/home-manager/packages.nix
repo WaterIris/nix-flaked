@@ -1,6 +1,7 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    lazydocker
     obsidian
     tree
     inputs.nixvim.packages.${system}.default
