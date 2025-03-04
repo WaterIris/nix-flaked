@@ -118,6 +118,9 @@
 
       "decoration" = {
         rounding = 14;
+        blur = {
+          enabled = false;
+        };
       };
 
       "bezier" = [
