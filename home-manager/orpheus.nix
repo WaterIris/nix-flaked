@@ -15,6 +15,7 @@
     ../modules/home-manager/direnv.nix
     ../modules/home-manager/bg.nix
     ../modules/home-manager/kitty.nix
+    ../modules/home-manager/dunst_min.nix
   ];
 
   programs.home-manager.enable = true;
