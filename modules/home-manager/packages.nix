@@ -15,5 +15,7 @@
     usbutils
     acpi
     spotify
+    zip
+    unzip
   ];
 }
