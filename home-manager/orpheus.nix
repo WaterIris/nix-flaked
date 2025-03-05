@@ -16,6 +16,7 @@
     ../modules/home-manager/bg.nix
     ../modules/home-manager/kitty.nix
     ../modules/home-manager/dunst_min.nix
+    ../modules/home-manager/bash.nix
   ];
 
   programs.home-manager.enable = true;
