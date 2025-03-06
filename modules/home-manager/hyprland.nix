@@ -21,7 +21,6 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    
     settings = {
       "$terminal" = "kitty";
       "$browser" = "firefox";
@@ -51,6 +50,7 @@
       "exec-once" = [ 
         "waybar"
         "dunst"
+        "hyprpaper"
       ];
 
       "env" = [
