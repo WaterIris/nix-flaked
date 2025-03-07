@@ -21,6 +21,11 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
+    systemd = { 
+      enable = true;
+      variables = ["--all"];
+    };  
+
     settings = {
       "$terminal" = "kitty";
       "$browser" = "firefox";
