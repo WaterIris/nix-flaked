@@ -45,11 +45,13 @@
 
       "windowrulev2" = [ 
         "opacity 0.85, focus:1"
-        "opacity 0.7, focus:0"
-        "opacity 1.0,focus:1,class:firefox"
-        "opacity 0.8,focus:0,class:firefox"
+        "opacity 0.70, focus:0"
+
+        "opacity 1.00,focus:1,class:firefox"
+        "opacity 0.70,focus:0,class:firefox"
+
         "opacity 0.90,focus:1,class:kitty"
-        "opacity 0.8,focus:0,class:kitty"
+        "opacity 0.70,focus:0,class:kitty"
       ];
 
       "monitor" = [
@@ -119,10 +121,10 @@
       ];
 
       "general" = {
-        gaps_in = "4px";
-        gaps_out = "8px";
-        border_size = 3;
-        "col.active_border" = "rgb(101319)";
+        gaps_in = "0px";
+        gaps_out = "0px";
+        border_size = 0;
+        "col.active_border" = "rgb(DE642B)";
         "col.inactive_border" = "rgb(101319)";
         layout = "dwindle";
       };
@@ -133,7 +135,7 @@
       };
 
       "decoration" = {
-        rounding = 14;
+        rounding = 0;
         blur = {
           enabled = false;
         };
