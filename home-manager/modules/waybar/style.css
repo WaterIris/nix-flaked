@@ -53,26 +53,6 @@ window#waybar {
   border-bottom: 5px solid #DE642B;
 }
 
-/*#workspaces {*/
-/*  margin: 0;*/
-/*}*/
-/**/
-/*#workspaces button{*/
-/*  padding: 0 10px;*/
-/*  color: #f4f3ee;*/
-/*	background: transparent;*/
-/*}*/
-/**/
-/*#workspaces button.active {*/
-/*  color: #DE642B;*/
-/*	background: transparent;*/
-/*}*/
-/**/
-/*#workspaces button.empty{*/
-/*  color: #3A435A;*/
-/*	background: transparent;*/
-/*}*/
-
 #clock {
   margin: 0;
   color: #f4f3ee;
@@ -81,35 +61,35 @@ window#waybar {
 #battery {
   margin: 0;
   color: #E34F4F;
-  border-bottom: 5px solid #E34F4F;
+  /*border-top: 5px solid #E34F4F;*/
 }
 
 #pulseaudio {
   margin: 0;
   color: #a6e3a1;
-  border-bottom: 5px solid #a6e3a1;
+  /*border-top: 5px solid #a6e3a1;*/
 }
 
 #network {
   margin: 0;
   color: #885AC4;
-  border-bottom: 5px solid #885AC4;
+  /*border-top: 5px solid #885AC4;*/
 }
 
 #disk {
   margin: 0;
   color: #3E66E0;
-  border-bottom: 5px solid #3E66E0;
+  /*border-top: 5px solid #3E66E0;*/
 }
 
 #memory {
   margin: 0;
   color: #DE642B;
-  border-bottom: 5px solid #DE642B;
+  /*border-top: 5px solid #DE642B;*/
 }
 
 #cpu {
   margin: 0;
   color: #56B7C8;
-  border-bottom: 5px solid #56B7C8;
+  /*border-top: 5px solid #56B7C8;*/
 }
