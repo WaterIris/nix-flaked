@@ -9,8 +9,9 @@
           position = "bottom";
           fixed-center= true;
           modules-left = [ 
-            "battery"
-            "pulseaudio"
+            "cpu"
+            "memory"
+            "disk"
             "network"
           ];
 
@@ -19,25 +20,31 @@
           ];
 
           modules-right = [
-            "cpu"
-            "memory"
-            "disk"
+            "battery"
+            "pulseaudio"
             "clock"
           ];
 
 	        "hyprland/workspaces" = {
             format = "{icon}";
-
-          format-icons = {
-              "1" = "1";
-              "2" = "2";
-              "3" = "3";
-              "4" = "4";
-              "5" = "5";
-              "6" = "6";
-          };
-            on-scroll-up = "hyprctl dispatch workspace e+1";
-            on-scroll-down = "hyprctl dispatch workspace e-1";
+            disable-scroll = true;
+            show-special = true;
+            special-visible-only = true;
+            all-outputs = false;
+            format-icons = {
+              "1" = "";
+              "2" = "";
+              "3" = "";
+              "4" = "󰄛";
+              "5" = "󰊫";
+              "6" = "";
+              "7" = "";
+              "8" = "";
+              "9" = "󰋒";
+            };
+            persistent-workspaces = {
+              "*" = 9;
+            };
           };  
 
           "clock" = {

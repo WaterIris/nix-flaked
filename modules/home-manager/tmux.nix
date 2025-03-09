@@ -7,7 +7,14 @@
     clock24 = true;
     baseIndex = 1;
     shell = "${pkgs.zsh}/bin/zsh";
+    extraConfig = ''
+      set -s escape-time 1
+      set -g status-interval 1    
+    '';
     plugins = with pkgs; [
+      {
+        plugin = tmuxPlugins.sensible;
+      }
       {
         plugin = tmuxPlugins.rose-pine;
         extraConfig = ''
@@ -35,6 +42,8 @@
           set -g @rose_pine_hostname_icon '󰒋' # Changes the default icon to the right of the hostname
           set -g @rose_pine_date_time_icon '󰃰' # Changes the default icon to the right of the date module
           set -g @rose_pine_window_status_separator "  " 
+          set -g @rose_pine_status_left_prepend_section '#{tmux_mode_indicator}'
+
         '';
       }
     ];
