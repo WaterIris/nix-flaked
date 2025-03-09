@@ -7,9 +7,10 @@
     ../modules/packages.nix
     ../modules/hyprland/hyprland.nix
     ../modules/hyprland/hyprpaper.nix
-    ../modules/waybar.nix
+    ../modules/waybar/waybar.nix
+    ../modules/kitty/kitty.nix
+    ../modules/wezterm/wezterm.nix
     ../modules/zsh.nix
-    ../modules/wezterm.nix
     ../modules/rofi.nix
     ../modules/git.nix
     ../modules/direnv.nix
