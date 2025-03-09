@@ -25,7 +25,7 @@
         "iris@orpheus" = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           extraSpecialArgs = {inherit inputs;};
-          modules = [./home-manager/orpheus.nix];
+          modules = [./home-manager/homes/orpheus.nix];
         }; 
       };
     };
