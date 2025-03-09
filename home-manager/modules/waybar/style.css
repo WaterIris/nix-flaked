@@ -50,7 +50,7 @@ window#waybar {
   box-shadow: inherit;
 	text-shadow: inherit;
 	color: #DE642B;
-  border-bottom: 5px solid #DE642B;
+  border-bottom: 3px solid #DE642B;
 }
 
 #clock {
