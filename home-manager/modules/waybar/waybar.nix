@@ -28,9 +28,9 @@
 	        "hyprland/workspaces" = {
             format = "{icon}";
             disable-scroll = true;
-            show-special = true;
-            special-visible-only = true;
-            all-outputs = false;
+            # show-special = true;
+            # special-visible-only = true;
+            all-outputs = true;
             format-icons = {
               "1" = "";
               "2" = "";
@@ -43,7 +43,15 @@
               "9" = "";
             };
             persistent-workspaces = {
-              "*" = 9;
+              "1" = "1";
+              "2" = "2";
+              "3" = "3";
+              "4" = "4";
+              "5" = "5";
+              "6" = "6";
+              "7" = "7";
+              "8" = "8";
+              "eDP-1" = ["9"];
             };
           };  
 

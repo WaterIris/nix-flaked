@@ -32,6 +32,7 @@
       "$run" = "rofi -show drun";
       "$off" = "rofi -show power-menu";
       "$mod" = "SUPER";
+      "$screen_shot" = "gscreenshot -s -f ~/Downloads/screen.png";
 
       "input" = {
         "kb_layout" = "pl";
@@ -42,6 +43,18 @@
         workspace_swipe_invert = false;
         workspace_swipe_forever	= true;
       };
+
+      workspace = [
+        "1, monitor:HDMI-A-1, default:true"
+        "2, monitor:HDMI-A-1, default:true"
+        "3, monitor:HDMI-A-1, default:true"
+        "4, monitor:HDMI-A-1, default:true"
+        "5, monitor:HDMI-A-1, default:true"
+        "6, monitor:HDMI-A-1, default:true"
+        "7, monitor:HDMI-A-1, default:true"
+        "8, monitor:HDMI-A-1, default:true"
+        "9, monitor:eDP-1, default:true"
+      ];
 
       "windowrulev2" = [ 
         "opacity 0.85, focus:1"
@@ -56,12 +69,11 @@
         "workspace 1, class:kitty"
         "workspace 2, class:firefox"
         "workspace 3, class:obsidian"
-        "workspace 8, class:spotify"
+        "workspace 8, class:Spotify"
       ];
 
       "monitor" = [
         "eDP-1, 1920x1080@144, 0x0, 1"
-        "DP-1,2560x1440@144, 0x0, 1"
         "HDMI-A-1, 2560x1440x@144, 1920x0,1"
       ];
 
@@ -85,9 +97,10 @@
         "$mod, Return, exec, $terminal"
         "$mod, C, killactive,"
         "$mod, E, exec, $browser"
+        "$mod, S, exec, $screen_shot"
         "$mod, R, exec, $run"
         "$mod, P, exec, $off"
-        "$mod+Shift, M, exit,"
+        "$mod+Shift, M, exit"
         
         "$mod, Left, movefocus, l"
         "$mod, Right, movefocus, r"
@@ -96,6 +109,7 @@
         
         "Alt, Tab, cyclenext,"
         "$mod, N, layoutmsg, swapsplit"
+        "$mod, B, layoutmsg, togglesplit"
 
 	      "$mod, 1, workspace, 1"
 	      "$mod, 2, workspace, 2"
