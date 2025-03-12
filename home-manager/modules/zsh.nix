@@ -37,6 +37,7 @@
       vi = "nvim";     
       ll = "ls -l";
       ls = "ls --color";
+      tt = "~/.config/tmux/tmux_start.sh";
     };
     history = {
       size = 10000;

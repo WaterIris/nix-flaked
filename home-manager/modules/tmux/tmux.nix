@@ -62,4 +62,8 @@
       }
     ];
   };
+
+  home.file.".config/tmux/tmux_start.sh" = {
+    source = ./tmux_start.sh;
+  };
 }
