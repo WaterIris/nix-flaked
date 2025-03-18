@@ -32,7 +32,7 @@
       "$run" = "rofi -show drun";
       "$off" = "rofi -show power-menu";
       "$mod" = "SUPER";
-      "$screen_shot" = "gscreenshot -s -f ~/Downloads/screen.png";
+      "$screen_shot" = "gscreenshot -s -f ~/Downloads/screen.png -c";
 
       "input" = {
         "kb_layout" = "pl";

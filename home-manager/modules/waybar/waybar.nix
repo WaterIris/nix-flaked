@@ -84,6 +84,7 @@
 		        format = "{icon}  {volume}%";
 		        format-icons = {
 			        "default" = [""  ""  ""];
+              "headphone" = "";
 	  	      };
 	        };
 
