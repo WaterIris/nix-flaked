@@ -9,19 +9,20 @@
           position = "top";
           fixed-center= true;
           modules-left = [ 
-            "hyprland/workspaces"
+            "clock"
+            "cpu"
+            "memory"
+            "disk"
           ];
 
           modules-center = [
-            "clock"
+            "hyprland/workspaces"
           ];
 
           modules-right = [
             "network"
-            "cpu"
-            "memory"
-            "disk"
             "pulseaudio"
+            "temperature"
             "battery"
           ];
 
@@ -32,14 +33,12 @@
             # special-visible-only = true;
             all-outputs = true;
             format-icons = {
-              "1" = " ";
-              "2" = "󰈹 ";
-              "3" = " ";
-              "4" = "󰄛 ";
-              "5" = " ";
-              "6" = "󰑴 ";
-              "7" = "󰊗 ";
-              "8" = " ";
+              "1" = "I";
+              "2" = "II";
+              "3" = "III";
+              "4" = "IV";
+              "5" = "V";
+              "6" = "VI";
               "9" = " ";
             };
             persistent-workspaces = {
@@ -49,8 +48,6 @@
               "4" = "4";
               "5" = "5";
               "6" = "6";
-              "7" = "7";
-              "8" = "8";
               "eDP-1" = ["9"];
             };
           };  
@@ -89,11 +86,18 @@
 	        };
 
           "network" = {
-		        tooltip = true;
-            tooltip-format = "{essid}";
-		        format-wifi = " ";
-		        format-ethernet = "󰈀 ";
-	        };
+            format-wifi = "󰖩 {signalStrength}%";
+            format-ethernet = "{ipaddr}/{cidr} 󰈀 ";
+            tooltip-format = "{ifname} via {gwaddr}";
+            format-disconnected = "󰖪 Disconnected ";
+            format-alt = "{ifname}: {ipaddr}/{cidr}";
+          };
+
+          "temperature" = {
+            critical-threshold = 80;
+            format = "{icon} {temperatureC}°C";
+            format-icons = ["" "" ""];
+          };
 
           "battery" = {
             interval = 30;

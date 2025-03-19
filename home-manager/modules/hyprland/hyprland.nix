@@ -51,8 +51,6 @@
         "4, monitor:HDMI-A-1, default:true"
         "5, monitor:HDMI-A-1, default:true"
         "6, monitor:HDMI-A-1, default:true"
-        "7, monitor:HDMI-A-1, default:true"
-        "8, monitor:HDMI-A-1, default:true"
         "9, monitor:eDP-1, default:true"
       ];
 
@@ -69,7 +67,7 @@
         "workspace 1, class:kitty"
         "workspace 2, class:firefox"
         "workspace 3, class:obsidian"
-        "workspace 8, class:Spotify"
+        "workspace 6, class:Spotify"
       ];
 
       "monitor" = [
@@ -117,8 +115,6 @@
 	      "$mod, 4, workspace, 4"
 	      "$mod, 5, workspace, 5"
 	      "$mod, 6, workspace, 6"
-	      "$mod, 7, workspace, 7"
-	      "$mod, 8, workspace, 8"
 	      "$mod, 9, workspace, 9"
 
 	      "$mod+Shift, 1, movetoworkspace, 1"
@@ -127,8 +123,6 @@
 	      "$mod+Shift, 4, movetoworkspace, 4"
 	      "$mod+Shift, 5, movetoworkspace, 5"
 	      "$mod+Shift, 6, movetoworkspace, 6"
-	      "$mod+Shift, 7, movetoworkspace, 7"
-	      "$mod+Shift, 8, movetoworkspace, 8"
 	      "$mod+Shift, 9, movetoworkspace, 9"
       ];
       
