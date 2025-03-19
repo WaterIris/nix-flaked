@@ -42,53 +42,54 @@ window#waybar {
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
-	color: #e37e4f;
+	color: #5599E2;
 }
 
 #workspaces button.active {
   transition: none;
   box-shadow: inherit;
 	text-shadow: inherit;
-	color: #DE642B;
+	color: #5679E3;
   /*border-bottom: 3px solid #DE642B;*/
 }
 
 #clock {
   margin: 0;
-  color: #f4f3ee;
+  /*color: #f4f3ee;*/
+	color: #3A435A;
 }
 
 #battery {
   margin: 0;
-  color: #E34F4F;
+	color: #3A435A;
 }
 
 #temperature {
   margin: 0;
-  color: #3E66E0;
+	color: #3A435A;
 }
 
 #pulseaudio {
   margin: 0;
-  color: #a6e3a1;
+	color: #3A435A;
 }
 
 #network {
   margin: 0;
-  color: #885AC4;
+	color: #3A435A;
 }
 
 #disk {
   margin: 0;
-  color: #3E66E0;
+	color: #3A435A;
 }
 
 #memory {
   margin: 0;
-  color: #DE642B;
+	color: #3A435A;
 }
 
 #cpu {
   margin: 0;
-  color: #56B7C8;
+	color: #3A435A;
 }
