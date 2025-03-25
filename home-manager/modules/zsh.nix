@@ -9,10 +9,19 @@
         truncation_length = 0;
         truncate_to_repo = false;
       };
-      character = {
-        success_symbol = "[](#89b4fa)";
-        error_symbol = "[](#f38ba8)";
+      # character = {
+        # success_symbol = "[](#89b4fa)";
+        # error_symbol = "[](#f38ba8)";
+      # };
+
+      git_branch = {
+        symbol = "  ";
       };
+
+      git_commit = {
+        tag_symbol = " ";
+      };
+
       format = lib.concatStrings [
       "$hostname"
       "$directory"
@@ -23,8 +32,9 @@
       "$git_status"
       # "$nix_shell"
       "$line_break"
-      "$character"];
-      };
+      "$character"
+      ];
+    };
   };
 
   programs.zsh = {
