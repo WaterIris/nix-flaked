@@ -62,7 +62,7 @@
         "opacity 0.70,focus:0,class:firefox"
 
         "opacity 0.90,focus:1,class:kitty"
-        "opacity 0.70,focus:0,class:kitty"
+        "opacity 0.60,focus:0,class:kitty"
 
         "workspace 1, class:kitty"
         "workspace 2, class:firefox"

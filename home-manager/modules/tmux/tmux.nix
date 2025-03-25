@@ -27,25 +27,36 @@
       # don't rename windows automatically
       set-option -g allow-rename off
       
+      # DESIGN TWEAKS
+
+      # panes
+      set -g pane-border-style "fg=#5679E3"
+      set -g pane-active-border-style "fg=#5679E3"
+
+      # statusbar
+      set -g status-position bottom
+
+      set -g status-style "fg=#5679E3,bg=#101319"
+
+
+      set -g status-left "#{?client_prefix,#[fg=#E34F4F],} 󰐤 #[fg=#5679E3] "
+      # set -g status-left '#{?client_prefix,#[bg=red],}󰐤 #[default] [#{session_name}] '
+      set -g status-left-length 10
+
+      set -g status-right "%Y-%m-%d %H:%M "
+      set -g status-right-length 50
+
+      setw -g window-status-current-style 'fg=#101319 bg=#5679E3'
+      setw -g window-status-current-format ' #I #W #F '
+
+      setw -g window-status-style 'fg=#5679E3 bg=#101319'
+      setw -g window-status-format ' #I #[fg=white]#W #[fg=#5679E3]#F '
+
+
+      # messages
+      set -g message-style 'fg=#f4f3ee bg=#101319'
     '';
-    plugins = with pkgs; [ 
-      {
-        plugin = tmuxPlugins.catppuccin;
-        extraConfig = /* bash */ ''
-            set -g @catppuccin_flavour 'mocha'
-
-            set -g @catppuccin_window_default_text "#W"
-            set -g @catppuccin_window_current_text "#W"
-
-            set -g @catppuccin_status_left_separator  ""
-            set -g @catppuccin_status_right_separator " "
-            set -g @catppuccin_status_fill "all"
-            set -g @catppuccin_status_connect_separator "yes"
-
-            set -g status-left ""
-            set -gF status-right "#{E:@catppuccin_status_application}#{E:@catppuccin_status_session}"
-        '';
-      }
+    plugins = with pkgs; [
       {
         plugin = tmuxPlugins.sensible;
       }

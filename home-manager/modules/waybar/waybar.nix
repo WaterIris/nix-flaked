@@ -2,7 +2,7 @@
 {
   programs.waybar = {
     enable = true;
-    style = ./mocha.css;
+    style = ./elena.css;
       settings = [
         {
           layer = "top";

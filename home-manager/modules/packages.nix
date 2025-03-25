@@ -1,7 +1,6 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    cheese
     gscreenshot
     lazydocker
     obsidian

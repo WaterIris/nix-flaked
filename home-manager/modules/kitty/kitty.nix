@@ -71,7 +71,7 @@
   };
 
   home.file.".config/kitty/colors.conf" = {
-    source = ./mocha.conf;
+    source = ./elena.conf;
   };
 
 }
