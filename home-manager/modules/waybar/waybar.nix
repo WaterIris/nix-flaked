@@ -2,7 +2,7 @@
 {
   programs.waybar = {
     enable = true;
-    style = ./style.css;
+    style = ./mocha.css;
       settings = [
         {
           layer = "top";
