@@ -87,7 +87,8 @@
 
           "network" = {
             format-wifi = "󰖩 {signalStrength}%";
-            format-ethernet = "{ipaddr}/{cidr} 󰈀 ";
+            # format-ethernet = "{ipaddr}/{cidr} 󰈀 ";
+            format-ethernet = " 󰈀 ";
             tooltip-format = "{ifname} via {gwaddr}";
             format-disconnected = "󰖪 Disconnected ";
             format-alt = "{ifname}: {ipaddr}/{cidr}";
@@ -100,10 +101,10 @@
           };
 
           "battery" = {
-            interval = 30;
+            interval = 5;
             states = {
-	            "good" = 95;
-              "warning" = 30;
+	            "good" = 75;
+              "warning" = 40;
               "critical" = 20;
             };
             format =  "{icon} {capacity}%";

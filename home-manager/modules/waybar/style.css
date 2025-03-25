@@ -64,6 +64,11 @@ window#waybar {
 	color: #3A435A;
 }
 
+#battery.critical {
+  margin: 0;
+  color: #E67E80;
+}
+
 #temperature {
   margin: 0;
 	color: #3A435A;
