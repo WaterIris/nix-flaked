@@ -55,15 +55,15 @@
       ];
 
       "windowrulev2" = [ 
-        "opacity 0.85, focus:1"
-        "opacity 0.70, focus:0"
+        "opacity 1.00, focus:1"
+        "opacity 1.00, focus:0"
 
-        "opacity 1.00,focus:1,class:firefox"
-        "opacity 0.70,focus:0,class:firefox"
+        # "opacity 1.00,focus:1,class:firefox"
+        # "opacity 0.70,focus:0,class:firefox"
 
-        "opacity 0.90,focus:1,class:kitty"
-        "opacity 0.60,focus:0,class:kitty"
-
+        # "opacity 1.00,focus:1,class:kitty"
+        # "opacity 1.00,focus:0,class:kitty"
+        
         "workspace 1, class:kitty"
         "workspace 2, class:firefox"
         "workspace 3, class:obsidian"
@@ -89,7 +89,11 @@
       "misc" = {
     	  force_default_wallpaper = 0;
     	  disable_hyprland_logo = true;
+        middle_click_paste = false;
       };
+      # unbind = [
+        # "mouse:274"
+      # ];
 
       "bind" = [
         "$mod, Return, exec, $terminal"

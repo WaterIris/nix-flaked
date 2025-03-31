@@ -87,8 +87,8 @@
 
           "network" = {
             format-wifi = "󰖩 {signalStrength}%";
-            # format-ethernet = "{ipaddr}/{cidr} 󰈀 ";
-            format-ethernet = " 󰈀 ";
+            format-ethernet = "{ipaddr}/{cidr} 󰈀 ";
+            # format-ethernet = " 󰈀 ";
             tooltip-format = "{ifname} via {gwaddr}";
             format-disconnected = "󰖪 Disconnected ";
             format-alt = "{ifname}: {ipaddr}/{cidr}";
