@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/junji.png" 
+        "~/.config/backgrounds/purple_flora.png" 
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/junji.png"
+        ",~/.config/backgrounds/purple_flora.png"
        ];
     };
 

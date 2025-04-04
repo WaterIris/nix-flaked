@@ -32,10 +32,10 @@
       {
         plugin = tmuxPlugins.gruvbox;
         extraConfig = /* bash */ ''
-          set -g @tmux-gruvbox 'dark256' # or 'dark256', 'light', 'light256'
-          set -g @tmux-gruvbox-left-status-a '#S' # tmux's session name
-          set -g @tmux-gruvbox-right-status-x '%d.%m.%Y' # e.g.: 30.01.2024
-          set -g @tmux-gruvbox-right-status-z '#h #{tmux_mode_indicator}'
+          # set -g @tmux-gruvbox 'dark256' # or 'dark256', 'light', 'light256'
+          # set -g @tmux-gruvbox-left-status-a '#S' # tmux's session name
+          # set -g @tmux-gruvbox-right-status-x '%d.%m.%Y' # e.g.: 30.01.2024
+          # set -g @tmux-gruvbox-right-status-z '#h #{tmux_mode_indicator}'
         '';
       }
       {

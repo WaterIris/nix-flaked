@@ -74,7 +74,7 @@
       START_CHARGE_THRESH_BAT0 = 0; # Dummy value
       STOP_CHARGE_THRESH_BAT0 = 1; # Actualy enables conservation mode
       };
-};
+  };
   # services.displayManager.sddm = {
     # enable = true;
     # wayland = {
