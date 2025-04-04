@@ -35,22 +35,21 @@
 
       # statusbar
       set -g status-position bottom
-
-      set -g status-style "fg=#956dca,bg=#101319"
+      set -g status-style "fg=#5679E3,bg=#101319"
 
 
       set -g status-left "#{?client_prefix,#[fg=#E34F4F],} 󰐤 #[fg=#5679E3] "
-      # set -g status-left '#{?client_prefix,#[bg=red],}󰐤 #[default] [#{session_name}] '
+      # set -g status-left '#{?client_prefix,#[bg=#E34F4F],}󰐤 #[default] [#{session_name}] '
       set -g status-left-length 10
 
       set -g status-right "%Y-%m-%d %H:%M "
       set -g status-right-length 50
 
-      setw -g window-status-current-style 'fg=#101319 bg=#956dca'
+      setw -g window-status-current-style 'fg=#101319 bg=#5679E3'
       setw -g window-status-current-format ' #I #W #F '
 
-      setw -g window-status-style 'fg=#956dca bg=#101319'
-      setw -g window-status-format ' #I #[fg=white]#W #[fg=#956dca]#F '
+      setw -g window-status-style 'fg=#5679E3 bg=#101319'
+      setw -g window-status-format ' #I #[fg=white]#W #[fg=#5679E3]#F '
 
 
       # messages
