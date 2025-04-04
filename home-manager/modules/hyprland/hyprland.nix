@@ -61,8 +61,8 @@
         # "opacity 1.00,focus:1,class:firefox"
         # "opacity 0.70,focus:0,class:firefox"
 
-        # "opacity 1.00,focus:1,class:kitty"
-        # "opacity 1.00,focus:0,class:kitty"
+        "opacity 0.70,focus:1,class:kitty"
+        "opacity 0.70,focus:0,class:kitty"
         
         "workspace 1, class:kitty"
         "workspace 2, class:firefox"
@@ -138,8 +138,8 @@
       ];
 
       "general" = {
-        gaps_in = "0px";
-        gaps_out = "0px";
+        gaps_in = "5px";
+        gaps_out = "10px";
         border_size = 0;
         "col.active_border" = "rgb(DE642B)";
         "col.inactive_border" = "rgb(101319)";
@@ -152,9 +152,9 @@
       };
 
       "decoration" = {
-        rounding = 0;
+        rounding = 10;
         blur = {
-          enabled = false;
+          enabled = true;
         };
       };
 
