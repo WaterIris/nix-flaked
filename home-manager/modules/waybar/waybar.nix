@@ -2,7 +2,7 @@
 {
   programs.waybar = {
     enable = true;
-    style = ./elena.css;
+    style = ./iri.css;
       settings = [
         {
           layer = "top";
@@ -33,12 +33,12 @@
             # special-visible-only = true;
             all-outputs = true;
             format-icons = {
-              "1" = "I";
-              "2" = "II";
-              "3" = "III";
+              "1" = " ";
+              "2" = " ";
+              "3" = "󱞁 ";
               "4" = "IV";
               "5" = "V";
-              "6" = "VI";
+              "6" = " ";
               "9" = " ";
             };
             persistent-workspaces = {

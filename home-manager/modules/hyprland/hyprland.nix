@@ -21,10 +21,10 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    #systemd = { 
-      #enable = true;
+    systemd = { 
+      enable = true;
       #variables = ["--all"];
-    #};  
+    };  
 
     settings = {
       "$terminal" = "kitty";
@@ -55,14 +55,14 @@
       ];
 
       "windowrulev2" = [ 
-        "opacity 1.00, focus:1"
-        "opacity 1.00, focus:0"
+        "opacity 0.90, focus:1"
+        "opacity 0.90, focus:0"
 
-        # "opacity 1.00,focus:1,class:firefox"
-        # "opacity 0.70,focus:0,class:firefox"
+        "opacity 1.00,focus:1,class:firefox"
+        "opacity 0.90,focus:0,class:firefox"
 
-        "opacity 0.95,focus:1,class:kitty"
-        "opacity 0.95,focus:0,class:kitty"
+        "opacity 1.00,focus:1,class:kitty"
+        "opacity 1.00,focus:0,class:kitty"
         
         "workspace 1, class:kitty"
         "workspace 2, class:firefox"
@@ -71,13 +71,16 @@
       ];
 
       "monitor" = [
-        "eDP-1, 1920x1080@144, 0x0, 1"
-        "HDMI-A-1, 2560x1440x@144, 1920x0,1"
+        # "eDP-1, 1920x1080@144, 0x0, 1"
+        "HDMI-A-1, 2560x1440x@144, 0x0,1"
+        "eDP-1, 1920x1080@144, 2560x0, 1"
+        # "HDMI-A-1, 2560x1440x@144, 1920x0,1"
       ];
 
       "exec-once" = [ 
         "waybar"
         "dunst"
+        "copyq --start-server"
       ];
 
       "env" = [
@@ -138,10 +141,10 @@
       ];
 
       "general" = {
-        gaps_in = "5px";
-        gaps_out = "10px";
-        border_size = 0;
-        "col.active_border" = "rgb(DE642B)";
+        gaps_in = "0px";
+        gaps_out = "0px";
+        border_size = 2;
+        "col.active_border" = "rgb(2e3859)";
         "col.inactive_border" = "rgb(101319)";
         layout = "dwindle";
       };
@@ -152,7 +155,7 @@
       };
 
       "decoration" = {
-        rounding = 10;
+        rounding = 0;
         blur = {
           enabled = true;
         };

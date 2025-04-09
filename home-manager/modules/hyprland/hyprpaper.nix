@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/purple_flora.png" 
+        "~/.config/backgrounds/eternity.png" 
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/purple_flora.png"
+        ",~/.config/backgrounds/eternity.png"
        ];
     };
 

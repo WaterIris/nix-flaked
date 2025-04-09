@@ -36,37 +36,31 @@
       
       # DESIGN TWEAKS
 
-      #  modes
-      setw -g clock-mode-colour yellow
-      setw -g mode-style "fg=black bg=red bold"
-
       # panes
-      set -g pane-border-style "fg=red"
-      set -g pane-active-border-style "fg=yellow"
+      set -g pane-border-style "fg=#956dca"
+      set -g pane-active-border-style "fg=#956dca"
 
       # statusbar
       set -g status-position bottom
-      set -g status-justify left
-      set -g status-style "fg=red"
+      set -g status-style "fg=#5679E3,bg=#101319"
 
-      set -g status-left "#{?client_prefix,#[fg=red],#[fg=blue]}  "
+
+      set -g status-left "#{?client_prefix,#[fg=#E34F4F],} 󰐤 #[fg=#5679E3] "
+      # set -g status-left '#{?client_prefix,#[bg=#E34F4F],}󰐤 #[default] [#{session_name}] '
       set -g status-left-length 10
 
+      set -g status-right "%Y-%m-%d %H:%M "
+      set -g status-right-length 50
 
-      set -g status-right-style "fg=black bg=yellow"
-      set -g status-right "#[bg=terminal fg=cyan]#[bg=cyan fg=black]%d-%m-%Y#[bg=terminal fg=cyan]#[bg=cyan fg=black]"
+      setw -g window-status-current-style 'fg=#101319 bg=#5679E3'
+      setw -g window-status-current-format ' #I #W #F '
 
-      setw -g window-status-current-style "fg=black bg=red bold"
-      setw -g window-status-current-format '#[bg=terminal fg=red]#[bg=red fg=black]#I #W #F#[bg=terminal fg=red]#[bg=red fg=black]'
+      setw -g window-status-style 'fg=#5679E3 bg=#101319'
+      setw -g window-status-format ' #I #[fg=white]#W #[fg=#5679E3]#F '
 
-      setw -g window-status-style "fg=red"
-      setw -g window-status-separator ""
-      setw -g window-status-format " #I #[fg=white]#W #[fg=red]#F "
-
-      setw -g window-status-bell-style "fg=yellow bg=red bold"
 
       # messages
-      set -g message-style "fg=yellow bg=terminal bold"    
+      set -g message-style 'fg=#f4f3ee bg=#101319'
     '';
     plugins = with pkgs; [
       {

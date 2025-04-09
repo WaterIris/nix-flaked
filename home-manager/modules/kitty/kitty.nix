@@ -56,7 +56,7 @@
       confirm_os_window_close = "0";
       # Tabs
       tab_bar_edge = "bottom";
-      tab_bar_margin_width = 6.0;
+      tab_bar_margin_width = 4.0;
       tab_bar_min_tabs = 2;
       tab_switch_strategy = "previous";
       tab_bar_style = "fade";
@@ -82,7 +82,7 @@
   };
 
   home.file.".config/kitty/colors.conf" = {
-    source = ./elena.conf;
+    source = ./iri.conf;
   };
 
 }

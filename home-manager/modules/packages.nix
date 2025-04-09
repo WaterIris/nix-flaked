@@ -1,7 +1,11 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    kdePackages.dolphin
+    lf
+    copyq
     gscreenshot
+    lazygit
     lazydocker
     obsidian
     tree
