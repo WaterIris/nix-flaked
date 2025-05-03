@@ -1,7 +1,8 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    kdePackages.dolphin
+    feh
+    nautilus
     lf
     copyq
     gscreenshot

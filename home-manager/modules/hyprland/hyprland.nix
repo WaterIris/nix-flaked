@@ -32,7 +32,7 @@
       "$run" = "rofi -show drun";
       "$off" = "rofi -show power-menu";
       "$mod" = "SUPER";
-      "$screen_shot" = "gscreenshot -s -f ~/Downloads/screen.png -c";
+      "$screen_shot" = "gscreenshot";
 
       "input" = {
         "kb_layout" = "pl";
@@ -141,9 +141,9 @@
       ];
 
       "general" = {
-        gaps_in = "0px";
-        gaps_out = "0px";
-        border_size = 2;
+        gaps_in = "4px";
+        gaps_out = "8px";
+        border_size = 0;
         "col.active_border" = "rgb(2e3859)";
         "col.inactive_border" = "rgb(101319)";
         layout = "dwindle";
@@ -155,7 +155,7 @@
       };
 
       "decoration" = {
-        rounding = 0;
+        rounding = 8;
         blur = {
           enabled = true;
         };

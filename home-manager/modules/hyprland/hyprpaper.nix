@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/eternity.png" 
+        "~/.config/backgrounds/city.png" 
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/eternity.png"
+        ",~/.config/backgrounds/city.png"
        ];
     };
 
