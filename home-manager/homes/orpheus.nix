@@ -7,6 +7,7 @@
     ../modules/packages.nix
     ../modules/hyprland/hyprland.nix
     ../modules/hyprland/hyprpaper.nix
+    ../modules/hyprland/hyprshot.nix
     ../modules/waybar/waybar.nix
     ../modules/kitty/kitty.nix
     ../modules/wezterm/wezterm.nix
@@ -14,7 +15,7 @@
     ../modules/rofi.nix
     ../modules/git.nix
     ../modules/direnv.nix
-    ../modules/bg.nix
+    ../modules/bg/bg.nix
     ../modules/dunst_min.nix
     ../modules/bash.nix
     ../modules/tmux/tmux.nix

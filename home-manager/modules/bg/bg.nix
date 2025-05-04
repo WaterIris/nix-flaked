@@ -1,7 +1,7 @@
 {...}:
 {
   home.file.".config/backgrounds" = {
-    source = ./backgrounds;
+    source = ./wallpapers;
     recursive = true;
   };
 }
