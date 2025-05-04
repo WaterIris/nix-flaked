@@ -1,101 +1,120 @@
 * {
-  border: none;
-  border-radius: 0px;
+  font-size: 16px;
   font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
-  font-size: 18px;
-  min-height: 0;
-  opacity: 1;
+  opacity: 1.0;
 }
 
-window#waybar {
+window#waybar{
+  all:unset;
+}
+
+.modules-left {
+  padding:4px;
+  margin-top:4px;
+  margin-right:0px;
+  margin-bottom:0px;
+  margin-left:8px;
+  border-radius:16px;
+  background: #101319;
+}
+
+.modules-center {
+  padding:4px;
+  margin-top:4px;
+  margin-right:0px;
+  margin-bottom:0px;
+  margin-left:0px;
+  border-radius:16px;
+  background: #101319;
+}
+
+.modules-right {
+  padding:4px;
+  margin-top:4px;
+  margin-right:8px;
+  margin-bottom:0px;
+  margin-left:0px;
+  border-radius:16px;
   background: #101319;
 }
 
 
 #clock, #battery, #pulseaudio, #network, #disk, #memory, #cpu, #temperature  {
-  padding: 0 10px;
-  margin: 0 10px;
+  padding: 0 4px;
+  margin: 0 4px;
 }
 
-#workspaces {     
-  margin: 0;
-  transition: none;
-  color: #e7ebf6;
-	background: #101319;
+#workspaces {
+  padding: 0px 5px;
 }
 
 #workspaces button {
-  padding: 0 10px;
-  transition: none;
-	background: transparent;
-  color: #e7ebf6;
-	background: #101319;
-}
-        
-#workspaces button.empty{
-  transition: none;
-  box-shadow: inherit;
-	text-shadow: inherit;
-	color: #5b6078;
+  all:unset;
+  padding: 0px 5px;
+	color: #e7ebf6;
+  transition: all .2s ease;
 }
 
 #workspaces button:hover {
-	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: #fda7c1;
+	color: #5b6078;
+  border: none;
+  transition: all 1s ease;
 }
 
 #workspaces button.active {
-  transition: none;
-  box-shadow: inherit;
-	text-shadow: inherit;
-	color: #fb80aa;
+  color: #52a9a9;
+  border: none;
+}
+
+#workspaces button.empty {
+	color: #5b6078;
+  border: none;
+}
+
+#workspaces button.empty:hover {
+	color: #5b6078;
+  border: none;
+  transition: all 1s ease;
+}
+
+#workspaces button.empty.active {
+  color: #63c0bf;
+  border: none;
 }
 
 #clock {
-  margin: 0;
-  /*color: #f4f3ee;*/
 	color: #5b6078;
 }
 
 #battery {
-  margin: 0;
 	color: #5b6078;
 }
 
 #battery.critical {
-  margin: 0;
   color: #fb80aa;
 }
 
 #temperature {
-  margin: 0;
 	color: #5b6078;
 }
 
 #pulseaudio {
-  margin: 0;
 	color: #5b6078;
 }
 
 #network {
-  margin: 0;
 	color: #5b6078;
 }
 
 #disk {
-  margin: 0;
 	color: #5b6078;
 }
 
 #memory {
-  margin: 0;
 	color: #5b6078;
 }
 
 #cpu {
-  margin: 0;
 	color: #5b6078;
 }

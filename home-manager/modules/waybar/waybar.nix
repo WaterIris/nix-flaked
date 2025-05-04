@@ -8,6 +8,8 @@
           layer = "top";
           position = "top";
           fixed-center= true;
+          reload_style_on_change = true;
+
           modules-left = [ 
             "clock"
             "cpu"
