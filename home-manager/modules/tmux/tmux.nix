@@ -57,7 +57,7 @@
       set -g status-right "#[bg=#101319 fg=cyan]#[bg=cyan fg=#101319] %d-%m-%Y #[bg=cyan fg=#101319]"
 
       setw -g window-status-current-style "fg=black bg=red bold"
-      setw -g window-status-current-format '#[bg=blue fg=#101320] #[bg=blue fg=#101319] #I #W #[bg=#101319 fg=blue]#[bg=#101319 fg=blue]'
+      setw -g window-status-current-format '#[bg=blue fg=#101320]#[bg=blue fg=#101319] #I #W #[bg=#101319 fg=blue]#[bg=#101319 fg=blue]'
 
       setw -g window-status-style "fg=red"
       setw -g window-status-separator ""
