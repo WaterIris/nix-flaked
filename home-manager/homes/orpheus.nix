@@ -12,7 +12,7 @@
     ../modules/kitty/kitty.nix
     ../modules/wezterm/wezterm.nix
     ../modules/zsh.nix
-    ../modules/wofi/wofi.nix
+    ../modules/rofi/rofi.nix
     ../modules/git.nix
     ../modules/direnv.nix
     ../modules/bg/bg.nix
