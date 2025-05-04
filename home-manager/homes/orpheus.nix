@@ -10,7 +10,6 @@
     ../modules/hyprland/hyprshot.nix
     ../modules/waybar/waybar.nix
     ../modules/kitty/kitty.nix
-    ../modules/wezterm/wezterm.nix
     ../modules/zsh.nix
     ../modules/rofi/rofi.nix
     ../modules/git.nix
