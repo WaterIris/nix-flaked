@@ -49,19 +49,19 @@
       set -g status-justify left
       set -g status-style "fg=red"
 
-      set -g status-left "#{?client_prefix,#[bg=blue fg=terminal],#[bg=blue fg=black]}   #[bg=#101320 fg=blue]"
-      set -g status-left-length 0
+      set -g status-left "#{?client_prefix,#[fg=red],#[fg=green]}  "
+      set -g status-left-length 10
 
 
       set -g status-right-style "fg=black bg=yellow"
-      set -g status-right "#[bg=#101319 fg=cyan]#[bg=cyan fg=#101319] %d-%m-%Y #[bg=cyan fg=#101319]"
+      set -g status-right "#[bg=terminal fg=cyan]#[bg=cyan fg=black]%d-%m-%Y#[bg=terminal fg=cyan]#[bg=cyan fg=black]"
 
       setw -g window-status-current-style "fg=black bg=red bold"
-      setw -g window-status-current-format '#[bg=blue fg=#101320] #[bg=blue fg=#101319] #I #W #[bg=#101319 fg=blue]#[bg=#101319 fg=blue]'
+      setw -g window-status-current-format '#[bg=terminal fg=blue]#[bg=blue fg=black]#I #W #F#[bg=terminal fg=blue]#[bg=red fg=black]'
 
       setw -g window-status-style "fg=red"
       setw -g window-status-separator ""
-      setw -g window-status-format "#[bg=#101319 fg=blue] #I #[fg=blue]#W "
+      setw -g window-status-format " #I #[fg=white]#W #[fg=red]#F "
 
       setw -g window-status-bell-style "fg=yellow bg=red bold"
 

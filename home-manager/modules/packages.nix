@@ -4,8 +4,6 @@
     feh
     nautilus
     lf
-    copyq
-    gscreenshot
     lazygit
     lazydocker
     obsidian
