@@ -36,7 +36,7 @@
       "$terminal" = "kitty";
       "$browser" = "firefox";
       "$run" = "rofi -show drun";
-      "$off" = "rofi -show power-menu";
+      "$off" = "rofi -show power-menu -no-show-icons";
       "$mod" = "SUPER";
       "$screen_shot" = "hyprshot -m region --clipboard-only";
 
@@ -56,6 +56,9 @@
 
         "opacity 1.00,focus:1,class:firefox"
         "opacity 0.80,focus:0,class:firefox"
+          
+        "opacity 0.80,focus:0,class:Rofi"
+        "opacity 0.80,focus:1,class:Rofi"
 
         "opacity 0.80,focus:1,class:kitty"
         "opacity 0.70,focus:0,class:kitty"
@@ -146,8 +149,13 @@
         preserve_split = true;
       };
 
+      device = {
+        name = "logitech-g-pro--1"; 
+        sensitivity = -0.5;
+      };
+      
       decoration = {
-        rounding = 8;
+        rounding = 16;
         blur = {
           enabled = true;
         };
